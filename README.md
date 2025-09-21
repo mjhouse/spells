@@ -1,7 +1,7 @@
 
 # Examples
 
-Example list of spells that could be constructed.
+Example list of fire spells that could be constructed.
 
 * fireball (target x1 large bolt)
 * firebolt (target xN small bolts)
@@ -31,6 +31,17 @@ Fire is used here as an example effect that a spell can be constructed around, b
 ## Effect
 
 This is the central spell component and mostly aligns with RPG-style "elements" like fire, ice, arcane, life, death etc. There will be a unique symbol for each effect that can be used to build a spell.
+
+* heat
+* cold
+* air
+* water
+* earth
+* void
+* arcane
+* death
+* life
+* etc
 
 ## Intensity
 
