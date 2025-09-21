@@ -1,0 +1,14 @@
+{
+    "name": "Fireball",
+    "effect": "fire",
+    "intensity": 1.0,
+    "target": "entity",
+    "modifiers": {
+        "speed": 0,
+        "delay": 0,
+        "duration": 0,
+        "count": 1,
+        "select": "manual",
+        "disposition": "hostile"
+    }
+}

@@ -1,0 +1,67 @@
+{
+    "type": "object",
+    "properties": {
+        "name": { "type": "string" },
+        "effect": { 
+            "type": "string",
+            "enum": [
+                "heat",
+                "cold",
+                "air",
+                "water",
+                "earth",
+                "void",
+                "arcane",
+                "death",
+                "life"
+            ]
+        },
+        "intensity": { 
+            "type": "number",
+            "minimum": -1.0,
+            "maximum": 1.0
+        },
+        "target": { 
+            "type": "string",
+            "enum": [ "entity", "region", "effect" ]
+        },
+        "modifiers": {
+            "type": "object",
+            "properties": {
+                "speed": { 
+                    "type": "integer", 
+                    "minimum": 0
+                },
+                "delay": { 
+                    "type": "integer", 
+                    "minimum": 0
+                },
+                "duration": { 
+                    "type": "integer", 
+                    "minimum": 1
+                },
+                "count": { 
+                    "type": "integer",
+                    "minimum": 1
+                },
+                "select": { 
+                    "type": "string", 
+                    "enum": [ "manual", "random", "closest" ]
+                },
+                "disposition": { 
+                    "type": "string", 
+                    "enum": [ "any", "friend", "hostile", "neutral" ]
+                },
+                "distance": { 
+                    "type": "integer", 
+                    "minimum": 0
+                },
+                "filter": { 
+                    "type": "string",
+                    "enum": [ "hostile", "friendly", "neutral" ]
+                }
+            }
+        }
+    },
+    "required": [ "name", "effect", "intensity", "target" ]
+}
